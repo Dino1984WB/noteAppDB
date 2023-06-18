@@ -1,8 +1,13 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
 
 notes = []  # Temporary in-memory storage for notes
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 
 @app.route('/notes', methods=['GET'])
 def get_notes():
