@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Notepad App</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-
+  <meta charset="UTF-8">
+  <title>NotePad App</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Notepad App</h1>
+  <div class="container">
+    <h1>NotePad</h1>
     <div class="note-container">
-        <textarea id="note-textarea" rows="10" cols="30" placeholder="Enter your note..."></textarea>
-        <button id="save-btn">Save</button>
-        <button id="delete-btn">Delete</button>
+      <textarea id="note-textarea" placeholder="Write your note here..."></textarea>
+      <div id="button-container">
+        <button id="save-btn">Save Note</button>
+        <button id="delete-btn">Delete Note</button>
+      </div>
     </div>
-    <div class="note-list">
-        <ul id="note-list"></ul>
+    <div id="note-list">
+      <h2>Saved Notes:</h2>
+      <ul id="notes"></ul>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

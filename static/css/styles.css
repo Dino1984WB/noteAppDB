@@ -1,90 +1,82 @@
 /*William Bukowski Was Here */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #040d5f;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    background-color: #0d1137;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
   
-}
-
-h1 {
-  text-align: center;
-  font-weight: 600;
-  color: #0c9b88b2;
-  margin-top: 0;
-}
-
-.note-container {
-  background-color: #0d1137;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-#note-textarea {
-  width: 100%;
-  resize: none;
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #152642;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
   
-}
-
-#save-btn,
-#delete-btn {
-  padding: 5px 10px;
-  margin-right: 5px;
-  background-color: #00adb5;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-#save-btn:hover,
-#delete-btn:hover {
-  background-color: #007d8c;
-}
-
-.note-list {
-  margin-top: 20px;
-  width: 100%;
-}
-
-.note-item {
-  cursor: pointer;
-  margin-bottom: 5px;
-  background-color: #1b243e;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.note-item:hover {
-  background-color: #263551;
-}
-
-.right-align {
-  margin-left: auto;
-}
+  h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .note-container {
+    background-color: #1b2253;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 400px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: none;
+    background-color: #0d1137;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  #button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3182ce;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4299e1;
+  }
+  
+  #note-list {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .note-item {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .note-item:hover {
+    background-color: #3182ce;
+  }
+  
